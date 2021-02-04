@@ -23,7 +23,7 @@ class ListModule {
   
     init(factory:PresentationFactory,rootVc:UIViewController) {
         self.vcFactory = factory
-        self.rootVc = rootVc
+        self.rootVc = rootVx
     }
     
     func start(with instructor: Instructor) {
