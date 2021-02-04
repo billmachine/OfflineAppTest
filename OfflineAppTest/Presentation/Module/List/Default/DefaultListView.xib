@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DefaultListView" customModule="OfflineAppTest" customModuleProvider="target">
+            <connections>
+                <outlet property="gameTable" destination="FEE-Db-Dcw" id="Le6-l4-bVw"/>
+                <outlet property="labelPlaceholder" destination="HR0-x9-Yg4" id="lwK-Fd-Z3S"/>
+                <outlet property="stackPlaceholder" destination="htv-sf-v8G" id="jPA-a5-4YN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="htv-sf-v8G">
+                    <rect key="frame" x="132" y="347.5" width="150" height="201"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_empty" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-QY-qCJ">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="PwI-GJ-zAU"/>
+                                <constraint firstAttribute="height" constant="150" id="yg7-va-fme"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pencarian Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-Ql-rdV">
+                            <rect key="frame" x="9" y="155" width="132.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketikkan Kata Kunci" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HR0-x9-Yg4">
+                            <rect key="frame" x="0.0" y="180.5" width="150" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-Db-Dcw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                    <color key="sectionIndexBackgroundColor" red="0.75686274509999996" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="htv-sf-v8G" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7ON-cw-coz"/>
+                <constraint firstItem="htv-sf-v8G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X4w-OY-3Oy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FEE-Db-Dcw" secondAttribute="trailing" id="mB8-jd-bfU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FEE-Db-Dcw" secondAttribute="bottom" id="vdA-dX-L5i"/>
+                <constraint firstItem="FEE-Db-Dcw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xnl-6c-vxp"/>
+                <constraint firstItem="FEE-Db-Dcw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xyL-Zf-6gF"/>
+            </constraints>
+            <point key="canvasLocation" x="136" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_empty" width="216" height="114"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
