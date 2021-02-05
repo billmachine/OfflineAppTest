@@ -1,7 +1,7 @@
 language: swift
 osx_image: xcode12
 xcode_workspace: OfflineAppTest.xcworkspace
-xcode_scheme: OfflineAppTestTests
+xcode_scheme: OfflineAppTest # run xcodebuild -list to see scheme
 code_destination: platform=iOS Simulator,OS=14.0,name=iPhone SE (2nd generation)
 # before_install:
 # - cd cobatest
