@@ -4,8 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OfflineAppTestTests.xcscheme_^#shared#^_</key>
+		<key>OfflineAppTestTests.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
