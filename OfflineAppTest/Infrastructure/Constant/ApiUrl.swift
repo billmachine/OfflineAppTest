@@ -8,5 +8,7 @@
 
 import Foundation
 
-var baseUrl = "https://rawg.io/api/"
-var visitUrl = "https://rawg.io/games/"
+class ConstantUrl {
+    static var baseUrl = "https://rawg.io/api/"
+    static var visitUrl = "https://rawg.io/games/"
+}

@@ -4,6 +4,10 @@ disabled_rules:
 - comma
 - control_statement
 - variable_name
+- force_cast
+- force_try
+- unused_closure_parameter
+
 #- variable_name_min_length
 
 opt_in_rules:
@@ -15,10 +19,10 @@ excluded:
 - Pods
 - SwiftLint/Common/3rdPartyLib
 
-force_cast: warning # implicitly
+#force_cast: warning # implicitly
 
-force_try:
-    severity: warning # explicitly
+#force_try:
+#    severity: warning # explicitly
 
 line_length:
     warning: 150

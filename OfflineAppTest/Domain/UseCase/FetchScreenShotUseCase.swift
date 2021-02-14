@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-
+import GamePackage
 
 public protocol FetchScreenShotUseCase {
     func execute(requestValue: FetchScreenShotUseCaseRequestValue) -> Observable<[ScreenshotDomain]>

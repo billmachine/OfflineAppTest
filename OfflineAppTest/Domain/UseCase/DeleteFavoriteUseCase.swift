@@ -7,7 +7,8 @@
 //
 
 import RxSwift
-
+import FavoritePackage
+import GamePackage
 
 public protocol DeleteFavoriteUseCase {
     func execute(requestValue: DeleteFavoriteUseCaseRequestValue) -> Observable<Bool>

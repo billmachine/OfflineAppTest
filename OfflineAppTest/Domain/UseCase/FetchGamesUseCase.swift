@@ -6,6 +6,7 @@
 //  Copyright © 2021 nostratech. All rights reserved.
 //
 
+import GamePackage
 import RxSwift
 
 public protocol FetchGamesUsecase {

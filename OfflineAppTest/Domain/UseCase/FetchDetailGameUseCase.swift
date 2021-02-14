@@ -6,9 +6,9 @@
 //  Copyright © 2021 nostratech. All rights reserved.
 //
 
-import RxSwift
+import GamePackage
 import Foundation
-
+import RxSwift
 
 public protocol FetchDetailGameUseCase {
     func execute(requestValue: FetchDetailGameUseCaseRequestValue) -> Observable<GameDomain>

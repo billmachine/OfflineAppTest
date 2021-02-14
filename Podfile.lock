@@ -1,7 +1,7 @@
 PODS:
   - AlignedCollectionViewFlowLayout (1.1.2)
   - Cosmos (22.1.0)
-  - EmptyDataSet-Swift (5.0.0)
+  - ExpandableLabel (0.5.2)
   - MaterialComponents (116.0.0):
     - MaterialComponents/ActionSheet (= 116.0.0)
     - "MaterialComponents/ActionSheet+Theming (= 116.0.0)"
@@ -642,12 +642,9 @@ PODS:
   - MotionAnimator (2.8.1):
     - MotionInterchange (~> 1.6)
   - MotionInterchange (1.6.0)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - SkeletonView (1.9)
   - SVProgressHUD (2.2.5)
   - SwiftLint (0.40.2)
@@ -655,10 +652,9 @@ PODS:
 DEPENDENCIES:
   - AlignedCollectionViewFlowLayout
   - Cosmos (~> 22.1)
-  - EmptyDataSet-Swift (~> 5.0.0)
+  - ExpandableLabel
   - MaterialComponents
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
+  - SDWebImage
   - SkeletonView
   - SVProgressHUD
   - SwiftLint
@@ -667,35 +663,32 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AlignedCollectionViewFlowLayout
     - Cosmos
-    - EmptyDataSet-Swift
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - MotionAnimator
     - MotionInterchange
-    - RxCocoa
-    - RxRelay
-    - RxSwift
     - SkeletonView
     - SVProgressHUD
     - SwiftLint
+  trunk:
+    - ExpandableLabel
+    - SDWebImage
 
 SPEC CHECKSUMS:
   AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
   Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
-  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  ExpandableLabel: c2fab6d27860c572d67134b30522a5917746171d
   MaterialComponents: a6cf920307c2864f71e37972620f24c4d14fae8d
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SkeletonView: f72ac4df69730e48324efae062ba580c2fce974d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
 
-PODFILE CHECKSUM: d325bb470b7bf2adc0c085af0b06fe148d8e6bfb
+PODFILE CHECKSUM: 4e9ac13999d6017943174d64ff9e4d0c703bdacb
 
 COCOAPODS: 1.10.0

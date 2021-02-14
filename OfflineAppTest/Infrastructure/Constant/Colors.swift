@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreOfflineAppTestKit
 
 struct Colors {
     static let colorPrimary = Helper.hexStringToUIColor(hex:"#D14949")

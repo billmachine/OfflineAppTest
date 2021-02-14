@@ -7,8 +7,8 @@
 //
 
 import RxSwift
+import GamePackage
 import Foundation
-
 
 public protocol FetchGamesbyPageUseCase {
     func execute(requestValue: FetchGamesbyPageUseCaseRequestValue) -> Observable<[GameDomain]>

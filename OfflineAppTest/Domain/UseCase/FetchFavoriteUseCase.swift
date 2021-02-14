@@ -7,7 +7,8 @@
 //
 
 import RxSwift
-
+import FavoritePackage
+import GamePackage
 
 public protocol FetchFavoriteUseCase {
 

@@ -8,7 +8,7 @@
 
 import RxSwift
 import Foundation
-
+import GamePackage
 
 public protocol SearchGameUseCase {
     func execute(requestValue: SearchGameUseCaseRequestValue) -> Observable<[GameDomain]>

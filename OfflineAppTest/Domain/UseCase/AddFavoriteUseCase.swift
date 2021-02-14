@@ -6,8 +6,10 @@
 //  Copyright © 2021 nostratech. All rights reserved.
 //
 
+import FavoritePackage
 import RxSwift
-
+import CoreOfflineAppTestKit
+import GamePackage
 
 public protocol AddFavoriteUseCase {
     func execute(requestValue: AddFavoriteUseCaseRequestValue) -> Observable<Bool>
@@ -34,10 +36,10 @@ extension DefaultAddFavoriteUseCase:AddFavoriteUseCase {
             let observableInsert = self.addGame(game:requestValue.game)
              
             let check =
-                Observable<Bool>.create { observer2 in
-                    observableCheck.subscribe( onNext: { result in
+                Observable<Bool>.create { observerCheck in
+                    _ = observableCheck.subscribe( onNext: { result in
                         if result.isEmpty {
-                            observer2.onNext(true)
+                            observerCheck.onNext(true)
                         } else {
                             observer.onError(DatabaseError.requestFailed)
                         }
@@ -47,20 +49,20 @@ extension DefaultAddFavoriteUseCase:AddFavoriteUseCase {
                     return Disposables.create()
                 }
             
-            let insert = Observable<Bool>.create { observer3 in
-                observableInsert.subscribe( onNext: { result in
+            let insert = Observable<Bool>.create { observerInsert in
+                _ = observableInsert.subscribe( onNext: { result in
                         if result {
-                            observer3.onNext(true)
+                            observerInsert.onNext(true)
                         } else {
-                            observer3.onError(DatabaseError.requestFailed)
+                            observerInsert.onError(DatabaseError.requestFailed)
                         }
                     },onError: { error in
-                        observer3.onError(DatabaseError.requestFailed)
+                        observerInsert.onError(DatabaseError.requestFailed)
                     })
                 return Disposables.create()
             }
             
-            check.flatMap { request -> Observable<Bool> in insert }
+           _ = check.flatMap { request -> Observable<Bool> in insert }
                 .subscribe(onNext: { result in
                     observer.onNext(true)
                 },
