@@ -1,19 +1,27 @@
-name: Swift
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+name: CI
+on: [push]
 jobs:
   build:
-
     runs-on: macos-latest
-
+    strategy:
+      matrix:
+        run-config:
+          - { scheme: 'OfflineAppTest', destination: 'platform=iOS Simulator,OS=14.3,name=iPhone SE (2nd generation)' }
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - name: Checkout Project
+      uses: actions/checkout@v1
+    - name: Show the currently detailed version of Xcode for CLI
+      run: xcode-select -p
+    - name: Show Build Settings
+      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showBuildSettings
+    - name: Show Build SDK
+      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showsdks
+    - name: Show Available Destinations
+      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showdestinations
+    - name: Install Dependencies
+      run: |
+        cd OfflineAppTest
+        pod install --repo-update
+      shell: bash
+    - name: build and test
+      run: xcodebuild -scheme '${{ matrix.run-config['scheme'] }}' -workspace OfflineAppTest.xcworkspace -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary

@@ -76,7 +76,7 @@ extension DefaultDetailPresenter: DetailPresenter {
     }
     
     func didVisit() {
-        let url = URL(string: "\(ConstantUrl.visitUrl)/\(requestValue.game.slug )")
+       let url = URL(string: "\(ApiUrl.visitUrl)/\(requestValue.game.slug )")
         UIApplication.shared.open(url!)
     }
     

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		988AABF42340BFE1B6381EB8 /* Pods_OfflineAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D0A946E40871F79BAC663D /* Pods_OfflineAppTest.framework */; };
-		FA05D45C25C1924300BC58E2 /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D45B25C1924300BC58E2 /* ApiUrl.swift */; };
+		8CFF502207248481EC88E6BF /* Pods_OfflineAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7C88937533082D4AE98453 /* Pods_OfflineAppTest.framework */; };
 		FA12D08B25A9CA5200D1B949 /* DefaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D08925A9CA5200D1B949 /* DefaultListView.swift */; };
 		FA12D08C25A9CA5200D1B949 /* DefaultListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12D08A25A9CA5200D1B949 /* DefaultListView.xib */; };
 		FA12D09325A9E5BD00D1B949 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D09225A9E5BD00D1B949 /* FavoriteView.swift */; };
@@ -24,12 +23,10 @@
 		FA12D0BE25AAD44400D1B949 /* AppDIContainer+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D0BD25AAD44400D1B949 /* AppDIContainer+Module.swift */; };
 		FA13FDA6258142AA00608F9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FDA5258142AA00608F9D /* AppDelegate.swift */; };
 		FA13FE102581544900608F9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE0F2581544900608F9D /* Colors.swift */; };
-		FA13FE182581675E00608F9D /* DefaultLocalFavoriteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE172581675E00608F9D /* DefaultLocalFavoriteSource.swift */; };
-		FA13FE1B2581677600608F9D /* DefaultRemoteGameSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE1A2581677600608F9D /* DefaultRemoteGameSource.swift */; };
-		FA44F49825DBC25900DE6F39 /* CoreOfflineAppTestKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */; };
-		FA44F49A25DBC25D00DE6F39 /* GamePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49925DBC25D00DE6F39 /* GamePackage */; };
-		FA44F49E25DBC29900DE6F39 /* FavoritePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49D25DBC29900DE6F39 /* FavoritePackage */; };
-		FA44F4FE25DBDDE900DE6F39 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F4FD25DBDDE900DE6F39 /* Swinject */; };
+		FA44F49825DBC25900DE6F39 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49725DBC25900DE6F39 /* SwiftPackageProductDependency */; };
+		FA44F49A25DBC25D00DE6F39 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49925DBC25D00DE6F39 /* SwiftPackageProductDependency */; };
+		FA44F49E25DBC29900DE6F39 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49D25DBC29900DE6F39 /* SwiftPackageProductDependency */; };
+		FA44F4FE25DBDDE900DE6F39 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F4FD25DBDDE900DE6F39 /* SwiftPackageProductDependency */; };
 		FA4AC72625B697FE00E72CF3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72525B697FE00E72CF3 /* DetailPresenter.swift */; };
 		FA4AC72925B6980B00E72CF3 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72825B6980B00E72CF3 /* DetailRouter.swift */; };
 		FA4AC72C25B6997000E72CF3 /* DefaultDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72B25B6997000E72CF3 /* DefaultDetailPresenter.swift */; };
@@ -58,10 +55,10 @@
 		FA6B4620251AF27400FFBE01 /* MyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B461F251AF27400FFBE01 /* MyString.swift */; };
 		FA6DD4E625B29C2800F54332 /* AppDIContainer+ListModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DD4E525B29C2800F54332 /* AppDIContainer+ListModuleFactory.swift */; };
 		FA6DD56625B43C2200F54332 /* AppDIContainer+MainModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DD56525B43C2100F54332 /* AppDIContainer+MainModuleFactory.swift */; };
-		FA7554A525D94080004ED5BF /* CategoryPackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA7554A425D94080004ED5BF /* CategoryPackage */; };
-		FA75550E25D94E35004ED5BF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA75550D25D94E35004ED5BF /* Alamofire */; };
-		FA75551325D94E6C004ED5BF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551225D94E6C004ED5BF /* Realm */; };
-		FA75551525D94E6C004ED5BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551425D94E6C004ED5BF /* RealmSwift */; };
+		FA7554A525D94080004ED5BF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA7554A425D94080004ED5BF /* SwiftPackageProductDependency */; };
+		FA75550E25D94E35004ED5BF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA75550D25D94E35004ED5BF /* SwiftPackageProductDependency */; };
+		FA75551325D94E6C004ED5BF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551225D94E6C004ED5BF /* SwiftPackageProductDependency */; };
+		FA75551525D94E6C004ED5BF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551425D94E6C004ED5BF /* SwiftPackageProductDependency */; };
 		FA8E558F25C864070061C01C /* PlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8E558E25C864070061C01C /* PlaceHolderView.xib */; };
 		FA8E559525C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559425C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift */; };
 		FA8E559D25C87D990061C01C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559C25C87D990061C01C /* ProfileView.swift */; };
@@ -84,8 +81,8 @@
 		FAEF3B7525C66E5400133A57 /* FavoriteTableViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF3B7425C66E5400133A57 /* FavoriteTableViewComponent.swift */; };
 		FAF5119A25B0AD4C00354D9E /* AppDIContainer+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5119925B0AD4C00354D9E /* AppDIContainer+Repository.swift */; };
 		FAF5119D25B0BBB300354D9E /* AppDIContainer+UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5119C25B0BBB300354D9E /* AppDIContainer+UseCase.swift */; };
-		FAFFDAF625D95CC9009A4184 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF525D95CC9009A4184 /* RxCocoa */; };
-		FAFFDAF825D95CC9009A4184 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF725D95CC9009A4184 /* RxSwift */; };
+		FAFFDAF625D95CC9009A4184 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF525D95CC9009A4184 /* SwiftPackageProductDependency */; };
+		FAFFDAF825D95CC9009A4184 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF725D95CC9009A4184 /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,10 +96,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BCA317D44AC27B233B236B /* Pods-OfflineAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.debug.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.debug.xcconfig"; sourceTree = "<group>"; };
-		1661582A9DE37C14355B94AE /* Pods-OfflineAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.release.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.release.xcconfig"; sourceTree = "<group>"; };
-		62D0A946E40871F79BAC663D /* Pods_OfflineAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflineAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA05D45B25C1924300BC58E2 /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
+		0A7C88937533082D4AE98453 /* Pods_OfflineAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflineAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18869291C5255030C97BFFBA /* Pods-OfflineAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.release.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.release.xcconfig"; sourceTree = "<group>"; };
+		B7FEC6A5DE170643F7DA944D /* Pods-OfflineAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.debug.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FA12D08925A9CA5200D1B949 /* DefaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListView.swift; sourceTree = "<group>"; };
 		FA12D08A25A9CA5200D1B949 /* DefaultListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultListView.xib; sourceTree = "<group>"; };
 		FA12D09225A9E5BD00D1B949 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -118,8 +114,6 @@
 		FA12D0BD25AAD44400D1B949 /* AppDIContainer+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+Module.swift"; sourceTree = "<group>"; };
 		FA13FDA5258142AA00608F9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA13FE0F2581544900608F9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		FA13FE172581675E00608F9D /* DefaultLocalFavoriteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocalFavoriteSource.swift; sourceTree = "<group>"; };
-		FA13FE1A2581677600608F9D /* DefaultRemoteGameSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRemoteGameSource.swift; sourceTree = "<group>"; };
 		FA44F48625DBB11200DE6F39 /* CoreOfflineAppTestKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreOfflineAppTestKit; path = ../Package/CoreOfflineAppTestKit; sourceTree = "<group>"; };
 		FA4AC72525B697FE00E72CF3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		FA4AC72825B6980B00E72CF3 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
@@ -192,17 +186,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFFDAF825D95CC9009A4184 /* RxSwift in Frameworks */,
-				FA44F49E25DBC29900DE6F39 /* FavoritePackage in Frameworks */,
-				FA75550E25D94E35004ED5BF /* Alamofire in Frameworks */,
-				FA7554A525D94080004ED5BF /* CategoryPackage in Frameworks */,
-				FA75551325D94E6C004ED5BF /* Realm in Frameworks */,
-				FA44F4FE25DBDDE900DE6F39 /* Swinject in Frameworks */,
-				FA75551525D94E6C004ED5BF /* RealmSwift in Frameworks */,
-				FAFFDAF625D95CC9009A4184 /* RxCocoa in Frameworks */,
-				988AABF42340BFE1B6381EB8 /* Pods_OfflineAppTest.framework in Frameworks */,
-				FA44F49825DBC25900DE6F39 /* CoreOfflineAppTestKit in Frameworks */,
-				FA44F49A25DBC25D00DE6F39 /* GamePackage in Frameworks */,
+				FAFFDAF825D95CC9009A4184 /* BuildFile in Frameworks */,
+				FA44F49E25DBC29900DE6F39 /* BuildFile in Frameworks */,
+				FA75550E25D94E35004ED5BF /* BuildFile in Frameworks */,
+				FA7554A525D94080004ED5BF /* BuildFile in Frameworks */,
+				FA75551325D94E6C004ED5BF /* BuildFile in Frameworks */,
+				FA44F4FE25DBDDE900DE6F39 /* BuildFile in Frameworks */,
+				FA75551525D94E6C004ED5BF /* BuildFile in Frameworks */,
+				FAFFDAF625D95CC9009A4184 /* BuildFile in Frameworks */,
+				FA44F49825DBC25900DE6F39 /* BuildFile in Frameworks */,
+				FA44F49A25DBC25D00DE6F39 /* BuildFile in Frameworks */,
+				8CFF502207248481EC88E6BF /* Pods_OfflineAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,16 +206,16 @@
 		09CCD573F92B69EB02FD4027 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				04BCA317D44AC27B233B236B /* Pods-OfflineAppTest.debug.xcconfig */,
-				1661582A9DE37C14355B94AE /* Pods-OfflineAppTest.release.xcconfig */,
+				B7FEC6A5DE170643F7DA944D /* Pods-OfflineAppTest.debug.xcconfig */,
+				18869291C5255030C97BFFBA /* Pods-OfflineAppTest.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7197FA08AFAA82376910F0AF /* Frameworks */ = {
+		62DC05C359EAD9648D85CF47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62D0A946E40871F79BAC663D /* Pods_OfflineAppTest.framework */,
+				0A7C88937533082D4AE98453 /* Pods_OfflineAppTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -385,17 +379,8 @@
 			children = (
 				FA6B461F251AF27400FFBE01 /* MyString.swift */,
 				FA13FE0F2581544900608F9D /* Colors.swift */,
-				FA05D45B25C1924300BC58E2 /* ApiUrl.swift */,
 			);
 			path = Constant;
-			sourceTree = "<group>";
-		};
-		FA15C31425D6A5BB00B462A2 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-				FA13FE172581675E00608F9D /* DefaultLocalFavoriteSource.swift */,
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		FA4BC72225A2FCC90069D5B3 /* Default */ = {
@@ -463,7 +448,7 @@
 				FA5E4F5025CCAE1100FB17BA /* OfflineAppTestTests */,
 				FA6B45DC251A429B00FFBE01 /* Products */,
 				09CCD573F92B69EB02FD4027 /* Pods */,
-				7197FA08AFAA82376910F0AF /* Frameworks */,
+				62DC05C359EAD9648D85CF47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -482,7 +467,6 @@
 				FA13FDFB2581487200608F9D /* App */,
 				FA13FE0225814EC300608F9D /* Infrastructure */,
 				FA13FDF9258147EF00608F9D /* Resources */,
-				FA8608EB25D7234A00C6729C /* Data */,
 				FA05D45125C0632500BC58E2 /* Presentation */,
 			);
 			path = OfflineAppTest;
@@ -498,23 +482,6 @@
 				FA8E559425C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		FA8608EB25D7234A00C6729C /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FA8608EC25D723AD00C6729C /* Remote */,
-				FA15C31425D6A5BB00B462A2 /* Local */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		FA8608EC25D723AD00C6729C /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				FA13FE1A2581677600608F9D /* DefaultRemoteGameSource.swift */,
-			);
-			path = Remote;
 			sourceTree = "<group>";
 		};
 		FA8E559A25C87D7C0061C01C /* Default */ = {
@@ -607,12 +574,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6B45F2251A429E00FFBE01 /* Build configuration list for PBXNativeTarget "OfflineAppTest" */;
 			buildPhases = (
-				C8F21F3C2BEA2B91DA875040 /* [CP] Check Pods Manifest.lock */,
+				F71AB5CEB4C935DB30392F64 /* [CP] Check Pods Manifest.lock */,
 				FA6B45D7251A429B00FFBE01 /* Sources */,
 				FA6B45D8251A429B00FFBE01 /* Frameworks */,
 				FA6B45D9251A429B00FFBE01 /* Resources */,
 				FAD618A2251B2F1B00ADA991 /* ShellScript */,
-				BEEFA58D218A965A2F9E2A81 /* [CP] Embed Pods Frameworks */,
+				B24A9986AC5898E5516FAE69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -620,16 +587,16 @@
 			);
 			name = OfflineAppTest;
 			packageProductDependencies = (
-				FA7554A425D94080004ED5BF /* CategoryPackage */,
-				FA75550D25D94E35004ED5BF /* Alamofire */,
-				FA75551225D94E6C004ED5BF /* Realm */,
-				FA75551425D94E6C004ED5BF /* RealmSwift */,
-				FAFFDAF525D95CC9009A4184 /* RxCocoa */,
-				FAFFDAF725D95CC9009A4184 /* RxSwift */,
-				FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */,
-				FA44F49925DBC25D00DE6F39 /* GamePackage */,
-				FA44F49D25DBC29900DE6F39 /* FavoritePackage */,
-				FA44F4FD25DBDDE900DE6F39 /* Swinject */,
+				FA7554A425D94080004ED5BF /* SwiftPackageProductDependency */,
+				FA75550D25D94E35004ED5BF /* SwiftPackageProductDependency */,
+				FA75551225D94E6C004ED5BF /* SwiftPackageProductDependency */,
+				FA75551425D94E6C004ED5BF /* SwiftPackageProductDependency */,
+				FAFFDAF525D95CC9009A4184 /* SwiftPackageProductDependency */,
+				FAFFDAF725D95CC9009A4184 /* SwiftPackageProductDependency */,
+				FA44F49725DBC25900DE6F39 /* SwiftPackageProductDependency */,
+				FA44F49925DBC25D00DE6F39 /* SwiftPackageProductDependency */,
+				FA44F49D25DBC29900DE6F39 /* SwiftPackageProductDependency */,
+				FA44F4FD25DBDDE900DE6F39 /* SwiftPackageProductDependency */,
 			);
 			productName = OfflineAppTest;
 			productReference = FA6B45DB251A429B00FFBE01 /* OfflineAppTest.app */;
@@ -664,10 +631,10 @@
 			);
 			mainGroup = FA6B45D2251A429B00FFBE01;
 			packageReferences = (
-				FA75550C25D94E35004ED5BF /* XCRemoteSwiftPackageReference "Alamofire" */,
-				FA75551125D94E6C004ED5BF /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-				FAFFDAF425D95CC9009A4184 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */,
+				FA75550C25D94E35004ED5BF /* RemoteSwiftPackageReference */,
+				FA75551125D94E6C004ED5BF /* RemoteSwiftPackageReference */,
+				FAFFDAF425D95CC9009A4184 /* RemoteSwiftPackageReference */,
+				FA44F4FC25DBDDE900DE6F39 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = FA6B45DC251A429B00FFBE01 /* Products */;
 			projectDirPath = "";
@@ -709,7 +676,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BEEFA58D218A965A2F9E2A81 /* [CP] Embed Pods Frameworks */ = {
+		B24A9986AC5898E5516FAE69 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -726,7 +693,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8F21F3C2BEA2B91DA875040 /* [CP] Check Pods Manifest.lock */ = {
+		F71AB5CEB4C935DB30392F64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -811,8 +778,6 @@
 				FA5389AE25C5E1E100B99C66 /* DefaultFavoritePresenter.swift in Sources */,
 				FA12D0B725A9F27400D1B949 /* AppDIContainer.swift in Sources */,
 				FA4AC72625B697FE00E72CF3 /* DetailPresenter.swift in Sources */,
-				FA13FE182581675E00608F9D /* DefaultLocalFavoriteSource.swift in Sources */,
-				FA13FE1B2581677600608F9D /* DefaultRemoteGameSource.swift in Sources */,
 				FA12D09925A9E5E800D1B949 /* FavoritePresenter.swift in Sources */,
 				FA12D0A525A9E79600D1B949 /* FavoriteModule.swift in Sources */,
 				FAD6189A251B117C00ADA991 /* GameTableViewCell.swift in Sources */,
@@ -824,7 +789,6 @@
 				FA8E55A325C881950061C01C /* DefaultProfileView+Setup.swift in Sources */,
 				FA13FE102581544900608F9D /* Colors.swift in Sources */,
 				FA12D0BE25AAD44400D1B949 /* AppDIContainer+Module.swift in Sources */,
-				FA05D45C25C1924300BC58E2 /* ApiUrl.swift in Sources */,
 				FA4AC72925B6980B00E72CF3 /* DetailRouter.swift in Sources */,
 				FAF5119D25B0BBB300354D9E /* AppDIContainer+UseCase.swift in Sources */,
 				FA5389AB25C5E1B900B99C66 /* DefaultFavoriteRouter.swift in Sources */,
@@ -1030,7 +994,7 @@
 		};
 		FA6B45F3251A429E00FFBE01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04BCA317D44AC27B233B236B /* Pods-OfflineAppTest.debug.xcconfig */;
+			baseConfigurationReference = B7FEC6A5DE170643F7DA944D /* Pods-OfflineAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1049,7 +1013,7 @@
 		};
 		FA6B45F4251A429E00FFBE01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1661582A9DE37C14355B94AE /* Pods-OfflineAppTest.release.xcconfig */;
+			baseConfigurationReference = 18869291C5255030C97BFFBA /* Pods-OfflineAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1099,7 +1063,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		FA44F4FC25DBDDE900DE6F39 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
 			requirement = {
@@ -1107,7 +1071,7 @@
 				minimumVersion = 2.7.1;
 			};
 		};
-		FA75550C25D94E35004ED5BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		FA75550C25D94E35004ED5BF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1115,7 +1079,7 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		FA75551125D94E6C004ED5BF /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		FA75551125D94E6C004ED5BF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
@@ -1123,7 +1087,7 @@
 				minimumVersion = 5.5.0;
 			};
 		};
-		FAFFDAF425D95CC9009A4184 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		FAFFDAF425D95CC9009A4184 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -1134,50 +1098,50 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */ = {
+		FA44F49725DBC25900DE6F39 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreOfflineAppTestKit;
 		};
-		FA44F49925DBC25D00DE6F39 /* GamePackage */ = {
+		FA44F49925DBC25D00DE6F39 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GamePackage;
 		};
-		FA44F49D25DBC29900DE6F39 /* FavoritePackage */ = {
+		FA44F49D25DBC29900DE6F39 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FavoritePackage;
 		};
-		FA44F4FD25DBDDE900DE6F39 /* Swinject */ = {
+		FA44F4FD25DBDDE900DE6F39 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = FA44F4FC25DBDDE900DE6F39 /* RemoteSwiftPackageReference */;
 			productName = Swinject;
 		};
-		FA7554A425D94080004ED5BF /* CategoryPackage */ = {
+		FA7554A425D94080004ED5BF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CategoryPackage;
 		};
-		FA75550D25D94E35004ED5BF /* Alamofire */ = {
+		FA75550D25D94E35004ED5BF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA75550C25D94E35004ED5BF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = FA75550C25D94E35004ED5BF /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		FA75551225D94E6C004ED5BF /* Realm */ = {
+		FA75551225D94E6C004ED5BF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA75551125D94E6C004ED5BF /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = FA75551125D94E6C004ED5BF /* RemoteSwiftPackageReference */;
 			productName = Realm;
 		};
-		FA75551425D94E6C004ED5BF /* RealmSwift */ = {
+		FA75551425D94E6C004ED5BF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA75551125D94E6C004ED5BF /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = FA75551125D94E6C004ED5BF /* RemoteSwiftPackageReference */;
 			productName = RealmSwift;
 		};
-		FAFFDAF525D95CC9009A4184 /* RxCocoa */ = {
+		FAFFDAF525D95CC9009A4184 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAFFDAF425D95CC9009A4184 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = FAFFDAF425D95CC9009A4184 /* RemoteSwiftPackageReference */;
 			productName = RxCocoa;
 		};
-		FAFFDAF725D95CC9009A4184 /* RxSwift */ = {
+		FAFFDAF725D95CC9009A4184 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAFFDAF425D95CC9009A4184 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = FAFFDAF425D95CC9009A4184 /* RemoteSwiftPackageReference */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
