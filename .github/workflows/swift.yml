@@ -24,4 +24,4 @@ jobs:
         pod install --repo-update
       shell: bash
     - name: build and test
-      run: xcodebuild -scheme '${{ matrix.run-config['scheme'] }}' -workspace OfflineAppTest.xcworkspace -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary
+      run: xcodebuild -scheme 'OfflineAppTest' -workspace 'OfflineAppTest.xcworkspace' -destination 'platform=iOS Simulator,OS=14.0,name=iPhone SE (2nd generation)' -showBuildTimingSummary
