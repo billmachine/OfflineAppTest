@@ -13,7 +13,7 @@ public final class RealmStorage {
     let realm: Realm?
     
     private init() {
-        self.realm = try! Realm(queue: .main)
+            self.realm = try? Realm(queue: .main)
     }
     
     static let sharedInstance:  RealmStorage = RealmStorage()

@@ -13,9 +13,9 @@ protocol MainModuleFactory: class {
 }
 
 public struct MainRequestValue {
-    let listView: DefaultListView
-    let favoriteView : DefaultFavoriteView
-    let profileView : DefaultProfileView
+    let listView: DefaultListView?
+    let favoriteView : DefaultFavoriteView?
+    let profileView : DefaultProfileView?
 }
 
 class MainModule {
@@ -50,9 +50,9 @@ class MainModule {
                 .createProfileViewController()
             
             let mainRequestValue = MainRequestValue(
-                listView: listVc as! DefaultListView,
-                favoriteView: favoriteVc as! DefaultFavoriteView,
-                profileView: profileVc as! DefaultProfileView
+                listView: listVc as? DefaultListView,
+                favoriteView: favoriteVc as? DefaultFavoriteView,
+                profileView: profileVc as? DefaultProfileView
             )
             
             let mainVc = vcFactory?.createMainViewController(requestValue: mainRequestValue)

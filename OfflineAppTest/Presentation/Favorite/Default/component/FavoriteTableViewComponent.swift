@@ -42,9 +42,9 @@ class FavoriteListTableComponentView : UIView {
     }()
     
     lazy var placeHolderView: UIView = {
-        var placeHolderView = (Bundle.main.loadNibNamed("PlaceHolderView", owner: self, options: nil)![0]) as! UIView
-        placeHolderView.translatesAutoresizingMaskIntoConstraints = false
-        return placeHolderView
+        var placeHolderView = (Bundle.main.loadNibNamed("PlaceHolderView", owner: self, options: nil)![0]) as? UIView
+        placeHolderView?.translatesAutoresizingMaskIntoConstraints = false
+        return placeHolderView ?? UIView()
     }()
 
     var safeArea: UILayoutGuide!

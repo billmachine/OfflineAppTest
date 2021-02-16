@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		988AABF42340BFE1B6381EB8 /* Pods_OfflineAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D0A946E40871F79BAC663D /* Pods_OfflineAppTest.framework */; };
-		FA05D44E25C0048E00BC58E2 /* FetchGamesbyPageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D44D25C0048E00BC58E2 /* FetchGamesbyPageUseCase.swift */; };
 		FA05D45C25C1924300BC58E2 /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D45B25C1924300BC58E2 /* ApiUrl.swift */; };
-		FA05D47C25C1E1B000BC58E2 /* SearchGamesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05D47B25C1E1B000BC58E2 /* SearchGamesUsecase.swift */; };
 		FA12D08B25A9CA5200D1B949 /* DefaultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D08925A9CA5200D1B949 /* DefaultListView.swift */; };
 		FA12D08C25A9CA5200D1B949 /* DefaultListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA12D08A25A9CA5200D1B949 /* DefaultListView.xib */; };
 		FA12D09325A9E5BD00D1B949 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12D09225A9E5BD00D1B949 /* FavoriteView.swift */; };
@@ -28,9 +26,10 @@
 		FA13FE102581544900608F9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE0F2581544900608F9D /* Colors.swift */; };
 		FA13FE182581675E00608F9D /* DefaultLocalFavoriteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE172581675E00608F9D /* DefaultLocalFavoriteSource.swift */; };
 		FA13FE1B2581677600608F9D /* DefaultRemoteGameSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13FE1A2581677600608F9D /* DefaultRemoteGameSource.swift */; };
-		FA3563972581C5D90031E54F /* DefaultGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3563962581C5D90031E54F /* DefaultGameRepository.swift */; };
-		FA35639A2581C5EC0031E54F /* DefaultFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3563992581C5EC0031E54F /* DefaultFavoriteRepository.swift */; };
-		FA3ED8A025C68C680086B205 /* AddFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3ED89F25C68C680086B205 /* AddFavoriteUseCase.swift */; };
+		FA44F49825DBC25900DE6F39 /* CoreOfflineAppTestKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */; };
+		FA44F49A25DBC25D00DE6F39 /* GamePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49925DBC25D00DE6F39 /* GamePackage */; };
+		FA44F49E25DBC29900DE6F39 /* FavoritePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F49D25DBC29900DE6F39 /* FavoritePackage */; };
+		FA44F4FE25DBDDE900DE6F39 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FA44F4FD25DBDDE900DE6F39 /* Swinject */; };
 		FA4AC72625B697FE00E72CF3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72525B697FE00E72CF3 /* DetailPresenter.swift */; };
 		FA4AC72925B6980B00E72CF3 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72825B6980B00E72CF3 /* DetailRouter.swift */; };
 		FA4AC72C25B6997000E72CF3 /* DefaultDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AC72B25B6997000E72CF3 /* DefaultDetailPresenter.swift */; };
@@ -48,29 +47,22 @@
 		FA4BC82225A5B9100069D5B3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BC82125A5B9100069D5B3 /* DetailView.swift */; };
 		FA4BC82925A5BC200069D5B3 /* DefaultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BC82725A5BC200069D5B3 /* DefaultDetailView.swift */; };
 		FA50DC2025C849FD00E094EA /* DefaultFavoriteView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50DC1F25C849FD00E094EA /* DefaultFavoriteView+ext.swift */; };
-		FA53893825C5260000B99C66 /* FetchDetailGameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53893725C5260000B99C66 /* FetchDetailGameUseCase.swift */; };
 		FA53893B25C534D900B99C66 /* DefaultDetailView+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53893A25C534D900B99C66 /* DefaultDetailView+Setup.swift */; };
-		FA53897825C5926B00B99C66 /* FetchScreenShotUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53897725C5926B00B99C66 /* FetchScreenShotUseCase.swift */; };
 		FA53897F25C5CFC100B99C66 /* AppDIContainer+FavoriteModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53897E25C5CFC100B99C66 /* AppDIContainer+FavoriteModuleFactory.swift */; };
 		FA5389A825C5E1A300B99C66 /* DefaultFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5389A725C5E1A300B99C66 /* DefaultFavoriteView.swift */; };
 		FA5389AB25C5E1B900B99C66 /* DefaultFavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5389AA25C5E1B900B99C66 /* DefaultFavoriteRouter.swift */; };
 		FA5389AE25C5E1E100B99C66 /* DefaultFavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5389AD25C5E1E100B99C66 /* DefaultFavoritePresenter.swift */; };
-		FA547C8925D970F90069E4E1 /* CoreOfflineAppTestKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA547C8825D970F90069E4E1 /* CoreOfflineAppTestKit */; };
 		FA5E4F5225CCAE1100FB17BA /* OfflineAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E4F5125CCAE1100FB17BA /* OfflineAppTestTests.swift */; };
 		FA6B45EB251A429E00FFBE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6B45EA251A429E00FFBE01 /* Assets.xcassets */; };
 		FA6B45EE251A429E00FFBE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6B45EC251A429E00FFBE01 /* LaunchScreen.storyboard */; };
 		FA6B4620251AF27400FFBE01 /* MyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B461F251AF27400FFBE01 /* MyString.swift */; };
-		FA6C608F25B870F2003D4B68 /* FetchGamesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C608E25B870F2003D4B68 /* FetchGamesUseCase.swift */; };
 		FA6DD4E625B29C2800F54332 /* AppDIContainer+ListModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DD4E525B29C2800F54332 /* AppDIContainer+ListModuleFactory.swift */; };
 		FA6DD56625B43C2200F54332 /* AppDIContainer+MainModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DD56525B43C2100F54332 /* AppDIContainer+MainModuleFactory.swift */; };
 		FA7554A525D94080004ED5BF /* CategoryPackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA7554A425D94080004ED5BF /* CategoryPackage */; };
-		FA7554A925D94080004ED5BF /* FavoritePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA7554A825D94080004ED5BF /* FavoritePackage */; };
-		FA7554AB25D94080004ED5BF /* GamePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FA7554AA25D94080004ED5BF /* GamePackage */; };
 		FA75550E25D94E35004ED5BF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA75550D25D94E35004ED5BF /* Alamofire */; };
 		FA75551325D94E6C004ED5BF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551225D94E6C004ED5BF /* Realm */; };
 		FA75551525D94E6C004ED5BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA75551425D94E6C004ED5BF /* RealmSwift */; };
 		FA8E558F25C864070061C01C /* PlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8E558E25C864070061C01C /* PlaceHolderView.xib */; };
-		FA8E559225C86EA30061C01C /* DeleteFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559125C86EA30061C01C /* DeleteFavoriteUseCase.swift */; };
 		FA8E559525C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559425C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift */; };
 		FA8E559D25C87D990061C01C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559C25C87D990061C01C /* ProfileView.swift */; };
 		FA8E55A025C87DA80061C01C /* DefaultProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E559F25C87DA80061C01C /* DefaultProfileView.swift */; };
@@ -92,7 +84,6 @@
 		FAEF3B7525C66E5400133A57 /* FavoriteTableViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF3B7425C66E5400133A57 /* FavoriteTableViewComponent.swift */; };
 		FAF5119A25B0AD4C00354D9E /* AppDIContainer+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5119925B0AD4C00354D9E /* AppDIContainer+Repository.swift */; };
 		FAF5119D25B0BBB300354D9E /* AppDIContainer+UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5119C25B0BBB300354D9E /* AppDIContainer+UseCase.swift */; };
-		FAF511A225B0C77100354D9E /* FetchFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF511A125B0C77100354D9E /* FetchFavoriteUseCase.swift */; };
 		FAFFDAF625D95CC9009A4184 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF525D95CC9009A4184 /* RxCocoa */; };
 		FAFFDAF825D95CC9009A4184 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAFFDAF725D95CC9009A4184 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -111,9 +102,7 @@
 		04BCA317D44AC27B233B236B /* Pods-OfflineAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.debug.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		1661582A9DE37C14355B94AE /* Pods-OfflineAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflineAppTest.release.xcconfig"; path = "Target Support Files/Pods-OfflineAppTest/Pods-OfflineAppTest.release.xcconfig"; sourceTree = "<group>"; };
 		62D0A946E40871F79BAC663D /* Pods_OfflineAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflineAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA05D44D25C0048E00BC58E2 /* FetchGamesbyPageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGamesbyPageUseCase.swift; sourceTree = "<group>"; };
 		FA05D45B25C1924300BC58E2 /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
-		FA05D47B25C1E1B000BC58E2 /* SearchGamesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGamesUsecase.swift; sourceTree = "<group>"; };
 		FA12D08925A9CA5200D1B949 /* DefaultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListView.swift; sourceTree = "<group>"; };
 		FA12D08A25A9CA5200D1B949 /* DefaultListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultListView.xib; sourceTree = "<group>"; };
 		FA12D09225A9E5BD00D1B949 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -131,9 +120,7 @@
 		FA13FE0F2581544900608F9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FA13FE172581675E00608F9D /* DefaultLocalFavoriteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocalFavoriteSource.swift; sourceTree = "<group>"; };
 		FA13FE1A2581677600608F9D /* DefaultRemoteGameSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRemoteGameSource.swift; sourceTree = "<group>"; };
-		FA3563962581C5D90031E54F /* DefaultGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameRepository.swift; sourceTree = "<group>"; };
-		FA3563992581C5EC0031E54F /* DefaultFavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavoriteRepository.swift; sourceTree = "<group>"; };
-		FA3ED89F25C68C680086B205 /* AddFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteUseCase.swift; sourceTree = "<group>"; };
+		FA44F48625DBB11200DE6F39 /* CoreOfflineAppTestKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreOfflineAppTestKit; path = ../Package/CoreOfflineAppTestKit; sourceTree = "<group>"; };
 		FA4AC72525B697FE00E72CF3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		FA4AC72825B6980B00E72CF3 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		FA4AC72B25B6997000E72CF3 /* DefaultDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailPresenter.swift; sourceTree = "<group>"; };
@@ -151,9 +138,7 @@
 		FA4BC82125A5B9100069D5B3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FA4BC82725A5BC200069D5B3 /* DefaultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDetailView.swift; sourceTree = "<group>"; };
 		FA50DC1F25C849FD00E094EA /* DefaultFavoriteView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultFavoriteView+ext.swift"; sourceTree = "<group>"; };
-		FA53893725C5260000B99C66 /* FetchDetailGameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDetailGameUseCase.swift; sourceTree = "<group>"; };
 		FA53893A25C534D900B99C66 /* DefaultDetailView+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultDetailView+Setup.swift"; sourceTree = "<group>"; };
-		FA53897725C5926B00B99C66 /* FetchScreenShotUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScreenShotUseCase.swift; sourceTree = "<group>"; };
 		FA53897E25C5CFC100B99C66 /* AppDIContainer+FavoriteModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+FavoriteModuleFactory.swift"; sourceTree = "<group>"; };
 		FA5389A725C5E1A300B99C66 /* DefaultFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavoriteView.swift; sourceTree = "<group>"; };
 		FA5389AA25C5E1B900B99C66 /* DefaultFavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavoriteRouter.swift; sourceTree = "<group>"; };
@@ -166,11 +151,9 @@
 		FA6B45ED251A429E00FFBE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6B45EF251A429E00FFBE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6B461F251AF27400FFBE01 /* MyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyString.swift; sourceTree = "<group>"; };
-		FA6C608E25B870F2003D4B68 /* FetchGamesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGamesUseCase.swift; sourceTree = "<group>"; };
 		FA6DD4E525B29C2800F54332 /* AppDIContainer+ListModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+ListModuleFactory.swift"; sourceTree = "<group>"; };
 		FA6DD56525B43C2100F54332 /* AppDIContainer+MainModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+MainModuleFactory.swift"; sourceTree = "<group>"; };
 		FA8E558E25C864070061C01C /* PlaceHolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceHolderView.xib; sourceTree = "<group>"; };
-		FA8E559125C86EA30061C01C /* DeleteFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFavoriteUseCase.swift; sourceTree = "<group>"; };
 		FA8E559425C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+ProfileModuleFactory.swift"; sourceTree = "<group>"; };
 		FA8E559C25C87D990061C01C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FA8E559F25C87DA80061C01C /* DefaultProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProfileView.swift; sourceTree = "<group>"; };
@@ -195,7 +178,6 @@
 		FAEF3B7425C66E5400133A57 /* FavoriteTableViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewComponent.swift; sourceTree = "<group>"; };
 		FAF5119925B0AD4C00354D9E /* AppDIContainer+Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+Repository.swift"; sourceTree = "<group>"; };
 		FAF5119C25B0BBB300354D9E /* AppDIContainer+UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDIContainer+UseCase.swift"; sourceTree = "<group>"; };
-		FAF511A125B0C77100354D9E /* FetchFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFavoriteUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,16 +192,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA547C8925D970F90069E4E1 /* CoreOfflineAppTestKit in Frameworks */,
 				FAFFDAF825D95CC9009A4184 /* RxSwift in Frameworks */,
+				FA44F49E25DBC29900DE6F39 /* FavoritePackage in Frameworks */,
 				FA75550E25D94E35004ED5BF /* Alamofire in Frameworks */,
 				FA7554A525D94080004ED5BF /* CategoryPackage in Frameworks */,
-				FA7554A925D94080004ED5BF /* FavoritePackage in Frameworks */,
 				FA75551325D94E6C004ED5BF /* Realm in Frameworks */,
-				FA7554AB25D94080004ED5BF /* GamePackage in Frameworks */,
+				FA44F4FE25DBDDE900DE6F39 /* Swinject in Frameworks */,
 				FA75551525D94E6C004ED5BF /* RealmSwift in Frameworks */,
 				FAFFDAF625D95CC9009A4184 /* RxCocoa in Frameworks */,
 				988AABF42340BFE1B6381EB8 /* Pods_OfflineAppTest.framework in Frameworks */,
+				FA44F49825DBC25900DE6F39 /* CoreOfflineAppTestKit in Frameworks */,
+				FA44F49A25DBC25D00DE6F39 /* GamePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD618A0251B2CA400ADA991 /* .swiftlint.yml */,
+				FA44F48625DBB11200DE6F39 /* CoreOfflineAppTestKit */,
 				FAAC8C3C25D798E600C03ED9 /* GamePackage */,
 				FAAC8C3B25D798E200C03ED9 /* CategoryPackage */,
 				FAAC8C3A25D798DB00C03ED9 /* FavoritePackage */,
@@ -499,7 +483,6 @@
 				FA13FE0225814EC300608F9D /* Infrastructure */,
 				FA13FDF9258147EF00608F9D /* Resources */,
 				FA8608EB25D7234A00C6729C /* Data */,
-				FA8608E525D7206800C6729C /* Domain */,
 				FA05D45125C0632500BC58E2 /* Presentation */,
 			);
 			path = OfflineAppTest;
@@ -517,34 +500,9 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
-		FA8608E525D7206800C6729C /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				FA8608E625D7207100C6729C /* UseCase */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FA8608E625D7207100C6729C /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				FAF511A125B0C77100354D9E /* FetchFavoriteUseCase.swift */,
-				FA6C608E25B870F2003D4B68 /* FetchGamesUseCase.swift */,
-				FA05D44D25C0048E00BC58E2 /* FetchGamesbyPageUseCase.swift */,
-				FA05D47B25C1E1B000BC58E2 /* SearchGamesUsecase.swift */,
-				FA53893725C5260000B99C66 /* FetchDetailGameUseCase.swift */,
-				FA53897725C5926B00B99C66 /* FetchScreenShotUseCase.swift */,
-				FA3ED89F25C68C680086B205 /* AddFavoriteUseCase.swift */,
-				FA8E559125C86EA30061C01C /* DeleteFavoriteUseCase.swift */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
 		FA8608EB25D7234A00C6729C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FA3563962581C5D90031E54F /* DefaultGameRepository.swift */,
-				FA3563992581C5EC0031E54F /* DefaultFavoriteRepository.swift */,
 				FA8608EC25D723AD00C6729C /* Remote */,
 				FA15C31425D6A5BB00B462A2 /* Local */,
 			);
@@ -663,14 +621,15 @@
 			name = OfflineAppTest;
 			packageProductDependencies = (
 				FA7554A425D94080004ED5BF /* CategoryPackage */,
-				FA7554A825D94080004ED5BF /* FavoritePackage */,
-				FA7554AA25D94080004ED5BF /* GamePackage */,
 				FA75550D25D94E35004ED5BF /* Alamofire */,
 				FA75551225D94E6C004ED5BF /* Realm */,
 				FA75551425D94E6C004ED5BF /* RealmSwift */,
 				FAFFDAF525D95CC9009A4184 /* RxCocoa */,
 				FAFFDAF725D95CC9009A4184 /* RxSwift */,
-				FA547C8825D970F90069E4E1 /* CoreOfflineAppTestKit */,
+				FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */,
+				FA44F49925DBC25D00DE6F39 /* GamePackage */,
+				FA44F49D25DBC29900DE6F39 /* FavoritePackage */,
+				FA44F4FD25DBDDE900DE6F39 /* Swinject */,
 			);
 			productName = OfflineAppTest;
 			productReference = FA6B45DB251A429B00FFBE01 /* OfflineAppTest.app */;
@@ -708,7 +667,7 @@
 				FA75550C25D94E35004ED5BF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FA75551125D94E6C004ED5BF /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				FAFFDAF425D95CC9009A4184 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				FA547C8725D970F90069E4E1 /* XCRemoteSwiftPackageReference "CoreOfflineAppTestKit" */,
+				FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = FA6B45DC251A429B00FFBE01 /* Products */;
 			projectDirPath = "";
@@ -823,23 +782,17 @@
 			files = (
 				FA4BC72E25A2FD8E0069D5B3 /* ListRouter.swift in Sources */,
 				FA4BC82225A5B9100069D5B3 /* DetailView.swift in Sources */,
-				FA35639A2581C5EC0031E54F /* DefaultFavoriteRepository.swift in Sources */,
 				FA53897F25C5CFC100B99C66 /* AppDIContainer+FavoriteModuleFactory.swift in Sources */,
 				FA13FDA6258142AA00608F9D /* AppDelegate.swift in Sources */,
 				FAC2975325BAF72E00B3C52A /* DefaultView+Setup.swift in Sources */,
-				FA3563972581C5D90031E54F /* DefaultGameRepository.swift in Sources */,
 				FA4AC73325B69C1000E72CF3 /* AppDIContainer+DetailModuleFactory.swift in Sources */,
 				FA12D08B25A9CA5200D1B949 /* DefaultListView.swift in Sources */,
-				FA8E559225C86EA30061C01C /* DeleteFavoriteUseCase.swift in Sources */,
 				FAD618B8251BFC5C00ADA991 /* SSCollectionViewCell.swift in Sources */,
 				FA12D0A225A9E76900D1B949 /* ProfileModule.swift in Sources */,
 				FAEF3B7525C66E5400133A57 /* FavoriteTableViewComponent.swift in Sources */,
-				FA53893825C5260000B99C66 /* FetchDetailGameUseCase.swift in Sources */,
 				FA4BC73D25A323FD0069D5B3 /* DefaultListPresenter.swift in Sources */,
 				FA4AC72F25B6998100E72CF3 /* DefaultDetailRouter.swift in Sources */,
-				FAF511A225B0C77100354D9E /* FetchFavoriteUseCase.swift in Sources */,
 				FA53893B25C534D900B99C66 /* DefaultDetailView+Setup.swift in Sources */,
-				FA53897825C5926B00B99C66 /* FetchScreenShotUseCase.swift in Sources */,
 				FA6B4620251AF27400FFBE01 /* MyString.swift in Sources */,
 				FA4AC72C25B6997000E72CF3 /* DefaultDetailPresenter.swift in Sources */,
 				FA5389A825C5E1A300B99C66 /* DefaultFavoriteView.swift in Sources */,
@@ -851,8 +804,6 @@
 				FA4BC81D25A5B8440069D5B3 /* DetailModule.swift in Sources */,
 				FAD6189E251B118E00ADA991 /* DummyTableViewCell.swift in Sources */,
 				FAF5119A25B0AD4C00354D9E /* AppDIContainer+Repository.swift in Sources */,
-				FA3ED8A025C68C680086B205 /* AddFavoriteUseCase.swift in Sources */,
-				FA05D44E25C0048E00BC58E2 /* FetchGamesbyPageUseCase.swift in Sources */,
 				FA12D09C25A9E5F500D1B949 /* FavoriteRouter.swift in Sources */,
 				FA4BC72425A2FD060069D5B3 /* ListModule.swift in Sources */,
 				FA8E559525C876A30061C01C /* AppDIContainer+ProfileModuleFactory.swift in Sources */,
@@ -862,7 +813,6 @@
 				FA4AC72625B697FE00E72CF3 /* DetailPresenter.swift in Sources */,
 				FA13FE182581675E00608F9D /* DefaultLocalFavoriteSource.swift in Sources */,
 				FA13FE1B2581677600608F9D /* DefaultRemoteGameSource.swift in Sources */,
-				FA05D47C25C1E1B000BC58E2 /* SearchGamesUsecase.swift in Sources */,
 				FA12D09925A9E5E800D1B949 /* FavoritePresenter.swift in Sources */,
 				FA12D0A525A9E79600D1B949 /* FavoriteModule.swift in Sources */,
 				FAD6189A251B117C00ADA991 /* GameTableViewCell.swift in Sources */,
@@ -878,7 +828,6 @@
 				FA4AC72925B6980B00E72CF3 /* DetailRouter.swift in Sources */,
 				FAF5119D25B0BBB300354D9E /* AppDIContainer+UseCase.swift in Sources */,
 				FA5389AB25C5E1B900B99C66 /* DefaultFavoriteRouter.swift in Sources */,
-				FA6C608F25B870F2003D4B68 /* FetchGamesUseCase.swift in Sources */,
 				FA50DC2025C849FD00E094EA /* DefaultFavoriteView+ext.swift in Sources */,
 				FA12D0AD25A9ED5A00D1B949 /* RepositoryFactory.swift in Sources */,
 				FA8E559D25C87D990061C01C /* ProfileView.swift in Sources */,
@@ -1150,12 +1099,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA547C8725D970F90069E4E1 /* XCRemoteSwiftPackageReference "CoreOfflineAppTestKit" */ = {
+		FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/billmachine/CoreOfflineAppTestKit";
+			repositoryURL = "https://github.com/Swinject/Swinject";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.7.1;
 			};
 		};
 		FA75550C25D94E35004ED5BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -1185,22 +1134,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA547C8825D970F90069E4E1 /* CoreOfflineAppTestKit */ = {
+		FA44F49725DBC25900DE6F39 /* CoreOfflineAppTestKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA547C8725D970F90069E4E1 /* XCRemoteSwiftPackageReference "CoreOfflineAppTestKit" */;
 			productName = CoreOfflineAppTestKit;
+		};
+		FA44F49925DBC25D00DE6F39 /* GamePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GamePackage;
+		};
+		FA44F49D25DBC29900DE6F39 /* FavoritePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FavoritePackage;
+		};
+		FA44F4FD25DBDDE900DE6F39 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA44F4FC25DBDDE900DE6F39 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 		FA7554A425D94080004ED5BF /* CategoryPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CategoryPackage;
-		};
-		FA7554A825D94080004ED5BF /* FavoritePackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FavoritePackage;
-		};
-		FA7554AA25D94080004ED5BF /* GamePackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GamePackage;
 		};
 		FA75550D25D94E35004ED5BF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

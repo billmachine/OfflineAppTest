@@ -14,11 +14,11 @@ import CoreOfflineAppTestKit
 import CategoryPackage
 import UIKit
 
-struct DetailRequestValue {
+public struct DetailRequestValue {
     var game : GameDomain
 }
 
-class DefaultDetailPresenter {
+public class DefaultDetailPresenter {
     let requestValue: DetailRequestValue
     var router: DetailRouter?
     

@@ -13,9 +13,9 @@ import CoreOfflineAppTestKit
 import GamePackage
 import Foundation
 
-struct ListRequestValue {}
+public struct ListRequestValue {}
 
-class DefaultListPresenter {
+public class DefaultListPresenter {
     var requestValue: ListRequestValue
     var router: ListRouter?
     var useCase: UseCaseFactory?

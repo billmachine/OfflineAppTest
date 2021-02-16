@@ -9,11 +9,12 @@
 import RxCocoa
 import RxSwift
 import GamePackage
+import FavoritePackage
 
-struct FavoriteRequestValue {
+public struct FavoriteRequestValue {
 }
 
-class DefaultFavoritePresenter {
+public class DefaultFavoritePresenter {
     var requestValue: FavoriteRequestValue
     var router: FavoriteRouter?
     var displayedGames  = BehaviorRelay<[GameDomain]>(value: [])
@@ -54,13 +55,12 @@ extension DefaultFavoritePresenter : FavoritePresenter {
     }
     
     func getFavorites() {
-        _ = fetchFavoriteUseCase.execute(requestValue:  FetchFavoriteUseCaseRequestValue()) {
-            _ = $0.subscribe {
-                if let favorites = $0.element {
+        _ = fetchFavoriteUseCase.execute(requestValue:  FetchFavoriteUseCaseRequestValue())
+            .subscribe { result in
+                if let favorites = result.element {
                     self.displayedGames.accept(favorites)
                     }
                 }
-            }
     }
     
 }

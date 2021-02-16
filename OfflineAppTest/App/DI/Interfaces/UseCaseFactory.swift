@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import GamePackage
+import FavoritePackage
 
-protocol UseCaseFactory {
+public protocol UseCaseFactory {
     func makeFetchFavoriteUseCase() -> FetchFavoriteUseCase 
     func makeFetchGamesUseCase() -> FetchGamesUsecase
     func makeFetchDetailGameUseCase() -> FetchDetailGameUseCase

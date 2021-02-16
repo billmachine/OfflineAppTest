@@ -4,8 +4,8 @@ disabled_rules:
 - comma
 - control_statement
 - variable_name
-- force_cast
-- force_try
+#- force_cast
+#- force_try
 - unused_closure_parameter
 
 #- variable_name_min_length

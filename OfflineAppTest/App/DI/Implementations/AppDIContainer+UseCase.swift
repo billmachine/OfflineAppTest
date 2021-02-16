@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import GamePackage
+import FavoritePackage
 
 extension AppDIContainer : UseCaseFactory {
     func makeFetchDetailGameUseCase() -> FetchDetailGameUseCase {
