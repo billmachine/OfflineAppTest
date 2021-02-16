@@ -14,15 +14,6 @@
 
 #import "MDCSheetBehavior.h"
 
-/**
- These values were arrived at empirically (through trial and error) to either emphasize or diminish
- the bounce effect that UIKit dynamics provides.
- */
-static const CGFloat kSimulateScrollViewBounceFrequency = 3.5f;
-static const CGFloat kSimulateScrollViewBounceDamping = 0.4f;
-static const CGFloat kDisableScrollViewBounceFrequency = 5.5f;
-static const CGFloat kDisableScrollViewBounceDamping = 1.0f;
-
 @interface MDCSheetBehavior ()
 @property(nonatomic) UIAttachmentBehavior *attachmentBehavior;
 @property(nonatomic) UIDynamicItemBehavior *itemBehavior;
@@ -31,20 +22,14 @@ static const CGFloat kDisableScrollViewBounceDamping = 1.0f;
 
 @implementation MDCSheetBehavior
 
-- (instancetype)initWithItem:(id<UIDynamicItem>)item
-    simulateScrollViewBounce:(BOOL)simulateScrollViewBounce {
+- (instancetype)initWithItem:(id<UIDynamicItem>)item {
   self = [super init];
   if (self) {
     _item = item;
     _attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:self.item
                                                     attachedToAnchor:CGPointZero];
-    if (simulateScrollViewBounce) {
-      _attachmentBehavior.frequency = kSimulateScrollViewBounceFrequency;
-      _attachmentBehavior.damping = kSimulateScrollViewBounceDamping;
-    } else {
-      _attachmentBehavior.frequency = kDisableScrollViewBounceFrequency;
-      _attachmentBehavior.damping = kDisableScrollViewBounceDamping;
-    }
+    _attachmentBehavior.frequency = (CGFloat)3.5;
+    _attachmentBehavior.damping = (CGFloat)0.4;
     _attachmentBehavior.length = 0;
 
     // Anchor movement along the y-axis.

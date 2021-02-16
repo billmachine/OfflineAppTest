@@ -1,4 +1,4 @@
-// Copyright 2018-present the Material Components for iOS authors. All Rights Reserved.
+// Copyright 2020-present the Material Components for iOS authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,20 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "MDCButtonScheme.h"
+#import <UIKit/UIKit.h>
+#import "MDCTextControlLabelPosition.h"
 
-@implementation MDCButtonScheme
-
-- (instancetype)init {
-  self = [super init];
-  if (self) {
-    _colorScheme =
-        [[MDCSemanticColorScheme alloc] initWithDefaults:MDCColorSchemeDefaultsMaterial201804];
-    _shapeScheme = [[MDCShapeScheme alloc] init];
-    _typographyScheme = [[MDCTypographyScheme alloc] init];
-    _minimumHeight = 36;
-    _cornerRadius = (CGFloat)4;
-  }
-  return self;
-}
-@end
+/**
+ This method tells an MDCTextControl whether its placeholder should be visible.
+ */
+BOOL MDCTextControlShouldPlaceholderBeVisibleWithPlaceholder(
+    NSString *placeholder, NSString *text, MDCTextControlLabelPosition labelPosition);

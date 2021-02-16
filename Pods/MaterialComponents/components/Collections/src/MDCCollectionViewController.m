@@ -19,10 +19,9 @@
 #import "private/MDCCollectionViewEditor.h"
 #import "private/MDCCollectionViewStyler.h"
 #import "MaterialCollectionCells.h"
-#import "MDCCollectionViewEditing.h"
-#import "MDCCollectionViewEditingDelegate.h"
 #import "MDCCollectionViewFlowLayout.h"
-#import "MDCCollectionInfoBarViewDelegate.h"
+#import "MaterialInk.h"
+#import "MaterialRipple.h"
 
 #include <tgmath.h>
 

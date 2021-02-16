@@ -13,7 +13,7 @@ pod 'Cosmos', '~> 22.1'
 #pod 'RealmSwift', '~> 5.5.0'
 #pod 'RxCocoa', '~> 5.1.1'
 pod "AlignedCollectionViewFlowLayout"
-pod 'MaterialComponents' , :inhibit_warnings => true
+pod 'MaterialComponents' , '~> 119.3.0', :inhibit_warnings => true
 #pod 'EmptyDataSet-Swift', '~> 5.0.0'
 pod 'SVProgressHUD'
 pod 'SwiftLint'

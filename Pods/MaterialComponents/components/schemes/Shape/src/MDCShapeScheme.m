@@ -14,8 +14,6 @@
 
 #import "MDCShapeScheme.h"
 
-#import "MDCShapeCategory.h"
-
 @implementation MDCShapeScheme
 
 - (instancetype)init {

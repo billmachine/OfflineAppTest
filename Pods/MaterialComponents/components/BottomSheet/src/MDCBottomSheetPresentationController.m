@@ -17,7 +17,6 @@
 #import <WebKit/WebKit.h>
 
 #import "private/MDCSheetContainerView.h"
-#import "MDCBottomSheetController.h"
 #import "MDCBottomSheetPresentationControllerDelegate.h"
 #import "MDCSheetContainerViewDelegate.h"
 #import "MaterialMath.h"
@@ -67,17 +66,6 @@ static UIScrollView *MDCBottomSheetGetPrimaryScrollView(UIViewController *viewCo
 }
 
 @synthesize delegate;
-
-- (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController
-                       presentingViewController:(UIViewController *)presentingViewController {
-  self = [super initWithPresentedViewController:presentedViewController
-                       presentingViewController:presentingViewController];
-  if (self) {
-    _adjustHeightForSafeAreaInsets = YES;
-    _simulateScrollViewBounce = YES;
-  }
-  return self;
-}
 
 - (UIView *)presentedView {
   return self.sheetView;
@@ -133,12 +121,10 @@ static UIScrollView *MDCBottomSheetGetPrimaryScrollView(UIViewController *viewCo
   }
   self.sheetView = [[MDCSheetContainerView alloc] initWithFrame:sheetFrame
                                                     contentView:self.presentedViewController.view
-                                                     scrollView:scrollView
-                                       simulateScrollViewBounce:self.simulateScrollViewBounce];
+                                                     scrollView:scrollView];
   self.sheetView.delegate = self;
   self.sheetView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
   self.sheetView.dismissOnDraggingDownSheet = self.dismissOnDraggingDownSheet;
-  self.sheetView.adjustHeightForSafeAreaInsets = self.adjustHeightForSafeAreaInsets;
 
   [containerView addSubview:_dimmingView];
   [containerView addSubview:self.sheetView];
@@ -242,7 +228,6 @@ static UIScrollView *MDCBottomSheetGetPrimaryScrollView(UIViewController *viewCo
     return;
   }
 
-  self.sheetView.willBeDismissed = YES;
   id<MDCBottomSheetPresentationControllerDelegate> strongDelegate = self.delegate;
   [self.presentingViewController
       dismissViewControllerAnimated:YES
@@ -312,13 +297,6 @@ static UIScrollView *MDCBottomSheetGetPrimaryScrollView(UIViewController *viewCo
 - (void)setPreferredSheetHeight:(CGFloat)preferredSheetHeight {
   _preferredSheetHeight = preferredSheetHeight;
   [self updatePreferredSheetHeight];
-}
-
-- (void)setAdjustHeightForSafeAreaInsets:(BOOL)adjustHeightForSafeAreaInsets {
-  _adjustHeightForSafeAreaInsets = adjustHeightForSafeAreaInsets;
-  if (_sheetView) {
-    _sheetView.adjustHeightForSafeAreaInsets = adjustHeightForSafeAreaInsets;
-  }
 }
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {

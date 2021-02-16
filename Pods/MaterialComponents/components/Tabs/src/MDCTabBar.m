@@ -14,10 +14,6 @@
 
 #import "MDCTabBar.h"
 
-#import "MDCTabBarAlignment.h"
-#import "MDCTabBarItemAppearance.h"
-#import "MDCTabBarTextTransform.h"
-#import "MDCItemBarDelegate.h"
 #import <MDFInternationalization/MDFInternationalization.h>
 
 #import "private/MDCItemBar.h"
@@ -27,7 +23,10 @@
 #import "MaterialRipple.h"
 #import "MDCTabBarExtendedAlignment.h"
 #import "MDCTabBarDelegate.h"
+#import "MDCTabBarDisplayDelegate.h"
+#import "MDCTabBarIndicatorTemplate.h"
 #import "MDCTabBarUnderlineIndicatorTemplate.h"
+#import "MDCTabBarSizeClassDelegate.h"
 #import "MaterialTypography.h"
 
 /// Padding between image and title in points, according to the spec.
@@ -86,11 +85,11 @@ static inline UIColor *RippleColor() {
   return [UIColor colorWithWhite:1 alpha:(CGFloat)0.7];
 }
 
-@protocol MDCTabBarSizeClassDelegate;
-@protocol MDCTabBarDisplayDelegate;
-
 @interface MDCTabBar ()
 @property(nonatomic, weak, nullable) id<MDCTabBarSizeClassDelegate> sizeClassDelegate;
+@end
+
+@interface MDCTabBar ()
 @property(nonatomic, weak, nullable) id<MDCTabBarDisplayDelegate> displayDelegate;
 @end
 

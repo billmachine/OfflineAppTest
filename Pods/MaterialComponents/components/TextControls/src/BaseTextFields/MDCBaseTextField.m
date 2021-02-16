@@ -16,8 +16,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MaterialTextControls+Enums.h"
-#import "MDCTextControlAssistiveLabelDrawPriority.h"
 #import <MDFInternationalization/MDFInternationalization.h>
 
 #import "MDCBaseTextFieldDelegate.h"
@@ -327,7 +325,7 @@ static char *const kKVOContextMDCBaseTextField = "kKVOContextMDCBaseTextField";
                                 normalFontLineHeight:self.normalFont.lineHeight
                                        textRowHeight:self.normalFont.lineHeight
                                     numberOfTextRows:self.numberOfLinesOfVisibleText
-                                             density:self.verticalDensity
+                                             density:0
                             preferredContainerHeight:self.preferredContainerHeight
                               isMultilineTextControl:NO];
 }
@@ -454,11 +452,6 @@ static char *const kKVOContextMDCBaseTextField = "kKVOContextMDCBaseTextField";
 
 - (void)setLeadingViewMode:(UITextFieldViewMode)leadingViewMode {
   _leadingViewMode = leadingViewMode;
-  [self setNeedsLayout];
-}
-
-- (void)setVerticalDensity:(CGFloat)verticalDensity {
-  _verticalDensity = verticalDensity;
   [self setNeedsLayout];
 }
 

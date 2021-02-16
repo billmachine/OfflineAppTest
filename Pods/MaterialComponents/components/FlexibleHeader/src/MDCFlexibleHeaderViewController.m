@@ -21,7 +21,6 @@
 #import "MDCFlexibleHeaderSafeAreaDelegate.h"
 #import "MDCFlexibleHeaderView+ShiftBehavior.h"
 #import "MDCFlexibleHeaderView.h"
-#import "MDCFlexibleHeaderViewDelegate.h"
 #import "MDCFlexibleHeaderViewLayoutDelegate.h"
 #import "MaterialFlexibleHeader+ShiftBehaviorEnabledWithStatusBar.h"
 #import "MaterialApplication.h"

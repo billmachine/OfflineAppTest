@@ -14,9 +14,7 @@
 
 #import "MDCSnackbarManager.h"
 
-#import "MaterialButtons.h"
 #import "MaterialOverlayWindow.h"
-#import "MaterialShadowElevations.h"
 #import "MDCSnackbarManagerDelegate.h"
 #import "MDCSnackbarMessage.h"
 #import "MDCSnackbarMessageView.h"

@@ -14,7 +14,6 @@
 
 #import "MDCAlertActionManager.h"
 #import "MaterialButtons.h"
-#import "MaterialDialogs.h"
 
 @interface MDCAlertActionManager ()
 

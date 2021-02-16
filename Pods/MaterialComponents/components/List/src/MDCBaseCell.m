@@ -15,10 +15,8 @@
 #import "MDCBaseCell.h"
 #import "MDCSelfSizingLayoutAttributes.h"
 
-#import "MaterialElevation.h"
 #import "MaterialInk.h"
 #import "MaterialRipple.h"
-#import "MaterialShadowElevations.h"
 #import "MaterialShadowLayer.h"
 
 @interface MDCBaseCell ()
@@ -210,7 +208,7 @@
 }
 
 - (MDCShadowLayer *)shadowLayer {
-  if ([self.layer isKindOfClass:[MDCShadowLayer class]]) {
+  if ([self.layer isMemberOfClass:[MDCShadowLayer class]]) {
     return (MDCShadowLayer *)self.layer;
   }
   return nil;

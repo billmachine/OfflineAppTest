@@ -14,9 +14,7 @@
 
 #import "MDCTextButtonThemer.h"
 
-#import "MDCButtonScheme.h"
 #import "MaterialButtons+ColorThemer.h"
-#import "MaterialButtons.h"
 #import "MaterialButtons+ShapeThemer.h"
 #import "MaterialButtons+TypographyThemer.h"
 

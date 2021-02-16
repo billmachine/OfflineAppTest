@@ -14,12 +14,6 @@
 
 #import "MDCBaseCell+MaterialTheming.h"
 
-#import "MaterialList.h"
-
-#import "MaterialColorScheme.h"
-
-#import "MaterialContainerScheme.h"
-
 static const CGFloat kInkAlpha = (CGFloat)0.16;
 
 @implementation MDCBaseCell (MaterialTheming)

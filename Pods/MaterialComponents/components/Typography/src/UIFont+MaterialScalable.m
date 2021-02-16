@@ -18,6 +18,7 @@
 
 #import "MaterialApplication.h"
 
+#import "MDCTypography.h"
 #import "private/MDCTypographyUtilities.h"
 
 static char MDCFontScaleObjectKey;
