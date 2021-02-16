@@ -242,11 +242,13 @@ static CGFloat kTopHandleTopMargin = (CGFloat)5.0;
 }
 
 - (void)presentationTransitionDidEnd:(BOOL)completed {
-  // Set up the tap recognizer.
-  UITapGestureRecognizer *tapGestureRecognizer =
-      [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrimTapped)];
-  [self.containerView addGestureRecognizer:tapGestureRecognizer];
-  tapGestureRecognizer.delegate = self;
+  if (!self.shouldForwardBackgroundTouchEvents) {
+    // Set up the tap recognizer.
+    UITapGestureRecognizer *tapGestureRecognizer =
+        [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrimTapped)];
+    [self.containerView addGestureRecognizer:tapGestureRecognizer];
+    tapGestureRecognizer.delegate = self;
+  }
 
   self.bottomDrawerContainerViewController.animatingPresentation = NO;
   [self.bottomDrawerContainerViewController.view setNeedsLayout];
@@ -371,6 +373,14 @@ static CGFloat kTopHandleTopMargin = (CGFloat)5.0;
 - (void)setTrackingScrollView:(UIScrollView *)trackingScrollView {
   _trackingScrollView = trackingScrollView;
   self.bottomDrawerContainerViewController.trackingScrollView = trackingScrollView;
+}
+
+- (BOOL)userDraggingEnabled {
+  return self.bottomDrawerContainerViewController.userDraggingEnabled;
+}
+
+- (void)setUserDraggingEnabled:(BOOL)userDraggingEnabled {
+  self.bottomDrawerContainerViewController.userDraggingEnabled = userDraggingEnabled;
 }
 
 - (void)setMaximumInitialDrawerHeight:(CGFloat)maximumInitialDrawerHeight {

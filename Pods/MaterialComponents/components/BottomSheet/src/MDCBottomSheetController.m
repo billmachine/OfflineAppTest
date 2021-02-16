@@ -18,8 +18,14 @@
 #import "MDCBottomSheetPresentationController.h"
 #import "MDCBottomSheetPresentationControllerDelegate.h"
 #import "MDCBottomSheetTransitionController.h"
+#import "MDCSheetState.h"
 #import "UIViewController+MaterialBottomSheet.h"
+#import "MaterialElevation.h"
+#import "MaterialShadowElevations.h"
+#import "MaterialShapes.h"
 #import "MaterialMath.h"
+
+static const CGFloat kElevationSpreadMaskAffordance = 50.0f;
 
 @interface MDCBottomSheetController () <MDCBottomSheetPresentationControllerDelegate>
 @property(nonatomic, readonly, strong) MDCShapedView *view;
@@ -46,6 +52,7 @@
     _transitionController = [[MDCBottomSheetTransitionController alloc] init];
     _transitionController.dismissOnBackgroundTap = YES;
     _transitionController.dismissOnDraggingDownSheet = YES;
+    _transitionController.adjustHeightForSafeAreaInsets = YES;
     super.transitioningDelegate = _transitionController;
     super.modalPresentationStyle = UIModalPresentationCustom;
     _shapeGenerators = [NSMutableDictionary dictionary];
@@ -97,6 +104,12 @@
   if (self.shouldFlashScrollIndicatorsOnAppearance) {
     [self.trackingScrollView flashScrollIndicators];
   }
+}
+
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+
+  self.view.layer.mask = [self createBottomEdgeElevationMask];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
@@ -227,6 +240,19 @@
   return self.elevation;
 }
 
+- (CAShapeLayer *)createBottomEdgeElevationMask {
+  CGFloat boundsWidth = CGRectGetWidth(self.view.bounds);
+  CGFloat boundsHeight = CGRectGetHeight(self.view.bounds);
+  CGRect visibleRectOutsideBounds =
+      CGRectMake(0 - kElevationSpreadMaskAffordance, 0 - kElevationSpreadMaskAffordance,
+                 boundsWidth + (2.0f * kElevationSpreadMaskAffordance),
+                 boundsHeight + kElevationSpreadMaskAffordance);
+  CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+  UIBezierPath *visibleAreaPath = [UIBezierPath bezierPathWithRect:visibleRectOutsideBounds];
+  maskLayer.path = visibleAreaPath.CGPath;
+  return maskLayer;
+}
+
 /* Disable setter. Always use internal transition controller */
 - (void)setTransitioningDelegate:
     (__unused id<UIViewControllerTransitioningDelegate>)transitioningDelegate {
@@ -246,6 +272,14 @@
 
 - (UIColor *)scrimColor {
   return _transitionController.scrimColor;
+}
+
+- (void)setAdjustHeightForSafeAreaInsets:(BOOL)adjustHeightForSafeAreaInsets {
+  _transitionController.adjustHeightForSafeAreaInsets = adjustHeightForSafeAreaInsets;
+}
+
+- (BOOL)adjustHeightForSafeAreaInsets {
+  return _transitionController.adjustHeightForSafeAreaInsets;
 }
 
 - (void)setIsScrimAccessibilityElement:(BOOL)isScrimAccessibilityElement {

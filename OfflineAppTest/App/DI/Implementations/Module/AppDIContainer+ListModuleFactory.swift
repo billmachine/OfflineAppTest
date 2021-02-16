@@ -15,8 +15,7 @@ extension AppDIContainer:ListModuleFactory {
         clearView.backgroundColor = UIColor.clear // Whatever color you like
         UITableViewCell.appearance().selectedBackgroundView = clearView
         
-        let view = DefaultListView()
-        view.presenter = createListPresenter(listRequestValue: listRequestValue)
+        let view = DefaultListView(with: createListPresenter(listRequestValue: listRequestValue))
         return view
     }
     

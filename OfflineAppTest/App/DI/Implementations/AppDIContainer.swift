@@ -9,7 +9,6 @@
 import UIKit
 import GamePackage
 import FavoritePackage
-import Swinject
 
 typealias PresentationFactory = ModuleFactory & ViewControllerFactory
 typealias ViewControllerFactory =
@@ -20,8 +19,6 @@ typealias ViewControllerFactory =
     ProfileModuleFactory
     
 final class AppDIContainer {
-    
-    let container = Container()
     
     let navigationController: UIViewController
     

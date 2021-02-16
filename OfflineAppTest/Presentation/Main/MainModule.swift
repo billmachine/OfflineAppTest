@@ -23,9 +23,9 @@ class MainModule {
         case go
     }
     
-    let vcFactory:MainModuleFactory?
-    var rootVc : UIViewController?
-    let moduleFactory:ModuleFactory?
+    let vcFactory:MainModuleFactory
+    var rootVc : UIViewController
+    let moduleFactory:ModuleFactory
     
     init(factory:PresentationFactory,rootVc:UIViewController) {
         
@@ -39,14 +39,14 @@ class MainModule {
         case .go:
             let listRequestValue = ListRequestValue()
             let listVc =
-                self.moduleFactory?.instantiateListModule().createListViewController(listRequestValue: listRequestValue)
+                self.moduleFactory.instantiateListModule().createListViewController(listRequestValue: listRequestValue)
             
             let favoriteRequestValue = FavoriteRequestValue()
             let favoriteVc =
-                self.moduleFactory?.instantiateFavoriteModule().createFavoriteViewController(requestValue:favoriteRequestValue)
+                self.moduleFactory.instantiateFavoriteModule().createFavoriteViewController(requestValue:favoriteRequestValue)
             
             let profileVc =
-                self.moduleFactory?.instantiateProfileModule()
+                self.moduleFactory.instantiateProfileModule()
                 .createProfileViewController()
             
             let mainRequestValue = MainRequestValue(
@@ -55,9 +55,9 @@ class MainModule {
                 profileView: profileVc as? DefaultProfileView
             )
             
-            let mainVc = vcFactory?.createMainViewController(requestValue: mainRequestValue)
-            mainVc!.modalPresentationStyle = .overFullScreen
-            self.rootVc?.show(mainVc!, sender: nil)
+            let mainVc = vcFactory.createMainViewController(requestValue: mainRequestValue)
+            mainVc.modalPresentationStyle = .overFullScreen
+            self.rootVc.show(mainVc, sender: nil)
             
         }
     }

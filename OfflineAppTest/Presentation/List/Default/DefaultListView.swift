@@ -21,6 +21,15 @@ extension DefaultListView: ListView {
 class DefaultListView: UIViewController {
     
     var presenter: ListPresenter?
+
+    public init(with presenter: ListPresenter) {
+        self.presenter = presenter
+        super.init(nibName: String(describing: type(of: self)), bundle: Bundle.main)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     @IBOutlet weak var gameTable: UITableView!
     @IBOutlet weak var stackPlaceholder: UIStackView!

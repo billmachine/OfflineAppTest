@@ -11,10 +11,9 @@ import UIKit
 extension AppDIContainer:DetailModuleFactory {
     
      func createDetailViewController(detailRequestValue:DetailRequestValue) -> UIViewController {
-        if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DefaultDetailView")
+        if let vc = mainStoryboard.instantiateViewController(withIdentifier: DefaultDetailView.identifier)
             as? DefaultDetailView {
             vc.presenter = createDetailPresenter(detailRequestValue: detailRequestValue)
-            return vc
         }
         return DefaultDetailView()
     }

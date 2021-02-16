@@ -20,7 +20,8 @@ extension DefaultDetailView : DetailView {
 }
 
 class DefaultDetailView: UIViewController {
-
+    static let identifier = String(describing: self)
+    
     var presenter: DetailPresenter?
     
     @IBOutlet weak var ssCollection: UICollectionView!

@@ -15,6 +15,15 @@ class DefaultFavoriteView : UIViewController {
         return FavoriteListTableComponentView(controller: self)
     }()
     
+    public init(presenter:FavoritePresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     var presenter: FavoritePresenter?
     
     override func viewDidLoad() {

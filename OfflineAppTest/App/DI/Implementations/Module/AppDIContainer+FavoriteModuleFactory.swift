@@ -11,8 +11,7 @@ import UIKit
 extension AppDIContainer:FavoriteModuleFactory {
     
     func createFavoriteViewController(requestValue:FavoriteRequestValue) -> UIViewController {
-        let view = DefaultFavoriteView()
-        view.presenter = createFavoritePresenter(favoriteRequestValue: requestValue)
+        let view = DefaultFavoriteView(presenter:createFavoritePresenter(favoriteRequestValue: requestValue))
         return view
     }
     

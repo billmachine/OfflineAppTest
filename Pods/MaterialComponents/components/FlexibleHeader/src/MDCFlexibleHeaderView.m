@@ -19,10 +19,15 @@
 #import "private/MDCFlexibleHeaderTopSafeArea.h"
 #import "private/MDCFlexibleHeaderView+Private.h"
 #import "private/MDCStatusBarShifter.h"
+#import "MaterialElevation.h"
 #import "MDCFlexibleHeaderView+ShiftBehavior.h"
 #import "MDCFlexibleHeaderViewAnimationDelegate.h"
 #import "MDCFlexibleHeaderViewDelegate.h"
+#import "MaterialFlexibleHeader+ShiftBehavior.h"
 #import "MaterialFlexibleHeader+ShiftBehaviorEnabledWithStatusBar.h"
+#import "MDCFlexibleHeaderMinMaxHeightDelegate.h"
+#import "MDCFlexibleHeaderTopSafeAreaDelegate.h"
+#import "MDCStatusBarShifterDelegate.h"
 #import "MaterialShadowElevations.h"
 #import "MaterialApplication.h"
 #import "MaterialMath.h"
@@ -1346,7 +1351,7 @@ static char *const kKVOContextMDCFlexibleHeaderView = "kKVOContextMDCFlexibleHea
       // re-adjusted by UIKit to a non-fractional number. Without rounding an infinite recurion
       // occurs, where the content offset is set to a fractional number and then UIKit re-setting
       // it back and re-calling this method over and over.
-      CGFloat offsetClamp = MDCRound(-(
+      CGFloat offsetClamp = round(-(
           MAX(self.minMaxHeight.maximumHeightWithTopSafeArea, scrollViewAdjustedContentInsetTop)));
       offset.y = MAX(offset.y, offsetClamp);
       [self fhv_setContentOffset:offset forTrackingScrollView:self.trackingScrollView];
