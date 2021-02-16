@@ -10,7 +10,7 @@ import UIKit
 
 extension AppDIContainer:MainModuleFactory {
     
-    func createMainViewControllerx(requestValue:MainRequestValue) -> UIViewController {
+    func createMainViewController(requestValue:MainRequestValue) -> UIViewController {
         var tabGames : UINavigationController {
             let listView = requestValue.listView
             listView?.tabBarItem = UITabBarItem(title: "Game", image: UIImage(named: "ic_game.png"), tag: 0)
