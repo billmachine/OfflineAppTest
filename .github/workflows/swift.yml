@@ -10,18 +10,5 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v1
-    - name: Show the currently detailed version of Xcode for CLI
-      run: xcode-select -p
-    - name: Show Build Settings
-      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showBuildSettings
-    - name: Show Build SDK
-      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showsdks
-    - name: Show Available Destinations
-      run: xcodebuild -workspace OfflineAppTest.xcworkspace -scheme '${{ matrix.run-config['scheme'] }}' -showdestinations
-    - name: Install Dependencies
-      run: |
-        cd OfflineAppTest
-        pod install --repo-update
-      shell: bash
     - name: build and test
       run: xcodebuild -scheme 'OfflineAppTest' -workspace 'OfflineAppTest.xcworkspace' -destination 'platform=iOS Simulator,OS=14.3,name=iPhone SE (2nd generation)' -showBuildTimingSummary
