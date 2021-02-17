@@ -20,7 +20,7 @@ extension DefaultDetailView : DetailView {
 }
 
 class DefaultDetailView: UIViewController {
-    static let identifier = String(describing: self)
+    static let identifier = String(describing: DefaultDetailView.self)
     
     var presenter: DetailPresenter?
     
